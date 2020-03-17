@@ -1,0 +1,18 @@
+{
+  "name": "infiltrate-game",
+  "version": "1.0.0",
+  "description": "A game about infiltrating high security levels...",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "keywords": [
+    "game",
+    "text"
+  ],
+  "author": "OwL",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^3.0.0"
+  }
+}
