@@ -34,14 +34,14 @@ class Player extends Tile {
     }
 
     right(spaces = 1) {
-        if (fileVar.level[this.pos + 1] != " ") return
+        if (fileVar.level[this.pos + 1] != " " && fileVar.level[this.pos + 1] != "$") return
         this.replaceSelf(".")
         this.pos++
         this.replaceSelf("@")
         if (spaces > 1) this.right(spaces - 1)
     }
     left(spaces = 1) {
-        if (fileVar.level[this.pos - 1] != " ") return
+        if (fileVar.level[this.pos - 1] != " " && fileVar.level[this.pos - 1] != "$") return
         this.replaceSelf(".")
         this.pos--
         this.replaceSelf("@")
@@ -49,14 +49,14 @@ class Player extends Tile {
     }
 
     down(spaces = 1) {
-        if (fileVar.level[this.pos + this.levelWidth] != " ") return
+        if (fileVar.level[this.pos + this.levelWidth] != " " && fileVar.level[this.pos + this.levelWidth] != "$") return
         this.replaceSelf(".")
         this.pos += this.levelWidth
         this.replaceSelf("@")
         if (spaces > 1) this.down(spaces - 1)
     }
     up(spaces = 1) {
-        if (fileVar.level[this.pos - this.levelWidth] != " ") return
+        if (fileVar.level[this.pos - this.levelWidth] != " " && fileVar.level[this.pos - this.levelWidth] != "$") return
         this.replaceSelf(".")
         this.pos -= this.levelWidth
         this.replaceSelf("@")

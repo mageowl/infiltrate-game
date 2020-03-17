@@ -25,6 +25,5 @@ const usrVars = {
     },
     player: new tileClasses.Player(-1)
 }
-usrVars.player = usrVars.level.get(usrVars.tile.player)[0]
 
 module.exports = usrVars

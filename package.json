@@ -1,18 +1,27 @@
 {
-  "name": "infiltrate-game",
-  "version": "1.0.0",
-  "description": "A game about infiltrating high security levels...",
-  "main": "main.js",
-  "scripts": {
-    "test": "node main.js"
-  },
-  "keywords": [
-    "game",
-    "text"
-  ],
-  "author": "OwL",
-  "license": "ISC",
-  "dependencies": {
-    "chalk": "^3.0.0"
-  }
+	"name": "infiltrate-game",
+	"version": "1.0.0",
+	"description": "A game about infiltrating high security levels...",
+	"main": "main.js",
+	"scripts": {
+		"start": "node main.js"
+	},
+	"keywords": [
+		"game",
+		"text"
+	],
+	"author": "OwL",
+	"license": "ISC",
+	"dependencies": {
+		"chalk": "^3.0.0"
+	},
+	"devDependencies": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/seattleowl/infiltrate-game.git"
+	},
+	"bugs": {
+		"url": "https://github.com/seattleowl/infiltrate-game/issues"
+	},
+	"homepage": "https://github.com/seattleowl/infiltrate-game/wiki/"
 }
